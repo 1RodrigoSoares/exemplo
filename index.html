@@ -1,43 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EXEMPLO 04 : CSS</title>
+<html lang="pt">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>EXEMPLO 04 : CSS</title>
+        <style>
+            ol  li {      /*DESCENDENTE DE*/
+                text-decoration: underline;
+                text-decoration-style: dashed !important; 
+                font-size:x-large;
+            }
+            body ul > li {   /*FILHO DE*/
+                text-decoration: underline;
+                text-decoration-style: dotted;
+                font-size:x-large;
+            }
+            </style>
   </head>
   <body>
-    <h1>Exemplo 04: CSS</h1>
-    <ul>
-      <li style="font-size: x-large">Minas Gerais</li>
-      <li style="font-size: x-large">Rio de janeiro</li>
-      <li
-        style="
+      <h1>Exemplo 04: CSS</h1>
+      <ol>
+          <li style="font-size: x-large">Minas Gerais
+          <ul>
+                <li>Juiz de Fora</li>
+                <li>Belo Horizonte</li>
+            </ul>
+          </li>
+          <li style="font-size: x-large">Rio de janeiro</li>
+          <li
+          style="
           font-size: x-large;
           font-weight: lighter;
           font-variant: small-caps;
-        "
+          "
       >
-        São Paulo
-      </li>
-      <li
-        style="
+      São Paulo
+    </li>
+    <li
+    style="
           font-size: x-large;
           font-weight: lighter;
           font-variant: small-caps;
-        "
+          "
       >
-        Espirito santo
-      </li>
-    </ul>
-    <ul>
-        <li style="text-decoration: underline;">Angra dos Reis</li>
-        <li>Juiz de Fora</li>
-        <li>Belo Horizonte</li>
-        <li>São paulo</li>
-        <li>Barra Mansa</li>
-        <li>Rio de Janeiro</li>
-        <li>Volta Redonda</li>
-    </ul>
-  </body>
+      Espirito santo
+    </li>
+</ol>
+<ul>
+    <li>Angra dos Reis</li>
+    <li>São paulo</li>
+    <li>Barra Mansa</li>
+    <li>Rio de Janeiro</li>
+    <li>Volta Redonda</li>
+</ul>
+</body>
 </html>
