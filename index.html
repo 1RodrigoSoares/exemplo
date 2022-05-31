@@ -1,58 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>EXEMPLO 04 : CSS</title>
-        <style>
-            ol  li {      /*DESCENDENTE DE*/
-                text-decoration: underline;
-                text-decoration-style: dashed !important; 
-                font-size:x-large;
-            }
-            body ul > li {   /*FILHO DE*/
-                text-decoration: underline;
-                text-decoration-style: dotted;
-                font-size:x-large;
-            }
-            </style>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EXEMPLO 04 : CSS</title>
+    <style>
+      .residente{
+          color: green;
+      }
+      li.cidade {
+        /*DESCENDENTE DE*/
+        text-decoration: underline;
+        text-decoration-style: dashed;
+        font-size: x-large;
+      }
+      li.estado {
+        /*FILHO DE*/
+        text-decoration: underline;
+        text-decoration-style: dotted;
+        font-size: x-large;
+      }
+    </style>
   </head>
   <body>
-      <h1>Exemplo 04: CSS</h1>
-      <ol>
-          <li style="font-size: x-large">Minas Gerais
-          <ul>
-                <li>Juiz de Fora</li>
-                <li>Belo Horizonte</li>
-            </ul>
-          </li>
-          <li style="font-size: x-large">Rio de janeiro</li>
-          <li
-          style="
-          font-size: x-large;
-          font-weight: lighter;
-          font-variant: small-caps;
-          "
-      >
-      São Paulo
-    </li>
-    <li
-    style="
-          font-size: x-large;
-          font-weight: lighter;
-          font-variant: small-caps;
-          "
-      >
-      Espirito santo
-    </li>
-</ol>
-<ul>
-    <li>Angra dos Reis</li>
-    <li>São paulo</li>
-    <li>Barra Mansa</li>
-    <li>Rio de Janeiro</li>
-    <li>Volta Redonda</li>
-</ul>
-</body>
+    <h1 class="estado">Exemplo 04: CSS</h1>
+    <ol>
+      <li class="estado">
+        Minas Gerais
+        <ul>
+          <li class="cidade">Juiz de Fora</li>
+          <li class="cidade">Belo Horizonte</li>
+        </ul>
+      </li>
+      <li class="estado">
+        Rio de janeiro
+        <ol>
+          <li class="cidade residente">Angra dos Reis</li>
+          <li class="cidade">São paulo</li>
+          <li class="cidade">Barra Mansa</li>
+        </ol>
+      </li>
+      <li class="estado">
+        São Paulo
+        <ol>
+          <li class="cidade">Rio de Janeiro</li>
+          <li class="cidade">Volta Redonda</li>
+        </ol>
+      </li>
+      <li class="estado">
+        Espirito santo
+        <ol>
+          <li class="cidade">Pindamonhaga</li>
+          <li class="cidade">Vila nova</li>
+        </ol>
+      </li>
+    </ol>
+    <ul></ul>
+  </body>
 </html>
